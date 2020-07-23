@@ -12,14 +12,18 @@ pipeline {
     }
 
     stages {
-        stage('Sonar Scan'){
-            steps{
-                sh label: '', script: 'mvn clean package sonar:sonar'
-            }
-        }
-        stage('Dependency Check'){
-            steps{
-                sh label: '', script: 'mvn clean install'
+        stage('Static Code Scan'){
+            parallel{
+                stage('Sonar Scan'){
+                    steps{
+                        sh label: '', script: 'mvn clean package sonar:sonar'
+                    }
+                }
+                stage('Dependency Check'){
+                    steps{
+                        sh label: '', script: 'mvn clean install'
+                    }
+                }
             }
         }
         stage('Build') {
