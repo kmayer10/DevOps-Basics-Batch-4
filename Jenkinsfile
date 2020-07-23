@@ -17,6 +17,11 @@ pipeline {
                 sh label: '', script: 'mvn clean package sonar:sonar'
             }
         }
+        stage('Dependency Check'){
+            steps{
+                sh label: '', script: 'mvn clean install'
+            }
+        }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
