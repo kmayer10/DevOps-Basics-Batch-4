@@ -1,5 +1,5 @@
 package com.sample.model;
 
 public enum LiquorType {
-    HARYANA,MAHARASHTRA,TAMILNADU
+    HARYANA,MAHARASHTRA,TAMILNADU,WESTBENGAL
 }

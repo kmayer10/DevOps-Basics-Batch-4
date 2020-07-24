@@ -22,6 +22,10 @@ public class LiquorService {
         }else if(type.equals(LiquorType.MAHARASHTRA)){
             brands.add("Mumbai");
 
+        }else if(type.equals(LiquorType.WESTBENGAL)){
+            brands.add("Kolkata");
+            brands.add("Howrah");
+
         }else {
             brands.add("No Information Available");
         }
