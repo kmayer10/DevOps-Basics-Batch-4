@@ -15,11 +15,11 @@ public class LiquorService {
             brands.add("Faridabad");
             brands.add(("Gurugram"));
 
-        }/*else if(type.equals(LiquorType.TAMILNADU)){
+        }else if(type.equals(LiquorType.TAMILNADU)){
             brands.add("Chennai");
             brands.add("Mahabalipuram");
 
-        }*/else if(type.equals(LiquorType.MAHARASHTRA)){
+        }else if(type.equals(LiquorType.MAHARASHTRA)){
             brands.add("Mumbai");
 
         }else {
